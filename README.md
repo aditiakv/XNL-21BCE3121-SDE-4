@@ -26,9 +26,35 @@ This database schema is designed for a high-performance, scalable fintech platfo
 - Query performance was optimized using `EXPLAIN ANALYZE`.
 
 ## How to Run
-1. Clone the repository.
-2. Run the SQL scripts to create the database schema.
-3. Use the Python script to generate synthetic data.
-4. Run queries to test the system.
 
-## ER Diagram
+### Backend
+1. Clone the repository.
+2. Navigate to the backend directory.
+3. Install the required dependencies:
+    ⁠bash
+   pip install -r requirements.txt
+   
+⁠ 4. Set up the database:
+   - The database dump is located in the `fintech-platform.sql` directory. Use it to create the database schema.
+5. Run the backend:
+    ⁠bash
+   python fintech_backend/run.py
+   
+
+⁠ ### Frontend
+1. Navigate to the frontend directory.
+2. Install the required dependencies:
+    ⁠bash
+   npm install
+   
+⁠ 3. Run the frontend:
+    ⁠bash
+   npm start
+   
+⁠ 4. **Note**: The frontend is not currently hooked to the backend. Connecting the frontend to the backend is a TODO and could be done if more time is available.
+
+### Postman Collection
+- The Postman collection is available in `postman_collection.json` in the root directory. It can be imported to test individual API calls as required.
+
+### Sharding and Partitioning Logic
+- The sharding and partitioning logic is contained in `sharding_logic.py` in the root directory.
