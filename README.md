@@ -58,3 +58,6 @@ This database schema is designed for a high-performance, scalable fintech platfo
 
 ### Sharding and Partitioning Logic
 - The sharding and partitioning logic is contained in `sharding_logic.py` in the root directory.
+
+## ER Diagram
+![ER Diagram](schema/er_diagram.png)
