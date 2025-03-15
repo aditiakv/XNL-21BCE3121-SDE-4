@@ -31,27 +31,27 @@ This database schema is designed for a high-performance, scalable fintech platfo
 1. Clone the repository.
 2. Navigate to the backend directory.
 3. Install the required dependencies:
-    ⁠bash
+   ```bash
    pip install -r requirements.txt
-   
-⁠ 4. Set up the database:
+   ```
+4. Set up the database:
    - The database dump is located in the `fintech-platform.sql` directory. Use it to create the database schema.
 5. Run the backend:
-    ⁠bash
+   ```bash
    python3 -m fintech_backend.run
-   
+   ```
 
-⁠ ### Frontend
+### Frontend
 1. Navigate to the frontend directory.
 2. Install the required dependencies:
-    ⁠bash
+   ```bash
    npm install
-   
-⁠ 3. Run the frontend:
-    ⁠bash
+   ```
+3. Run the frontend:
+   ```bash
    npm start
-   
-⁠ 4. **Note**: The frontend is not currently hooked to the backend. Connecting the frontend to the backend is a TODO and could be done if more time is available.
+   ```
+4. **Note**: The frontend is not currently hooked to the backend. Connecting the frontend to the backend is a TODO and could be done if more time is available.
 
 ### Postman Collection
 - The Postman collection is available in `postman_collection.json` in the root directory. It can be imported to test individual API calls as required.
