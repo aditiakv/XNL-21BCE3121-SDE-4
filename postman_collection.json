@@ -1,0 +1,116 @@
+{
+  "info": {
+    "name": "Fintech Backend API",
+    "description": "API endpoints for managing users, assets, and transactions.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Create User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"John Doe\", \"email\": \"john.doe@example.com\", \"password_hash\": \"hashed_password\"}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/users",
+              "host": ["http://127.0.0.1:5000"],
+              "path": ["users"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:5000/users/1",
+              "host": ["http://127.0.0.1:5000"],
+              "path": ["users", "1"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Assets",
+      "item": [
+        {
+          "name": "Get All Assets",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:5000/assets",
+              "host": ["http://127.0.0.1:5000"],
+              "path": ["assets"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Asset by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:5000/assets/1",
+              "host": ["http://127.0.0.1:5000"],
+              "path": ["assets", "1"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Transactions",
+      "item": [
+        {
+          "name": "Create Transaction",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"user_id\": 1, \"asset_id\": 1, \"amount\": 100.00, \"type\": \"buy\"}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/transactions",
+              "host": ["http://127.0.0.1:5000"],
+              "path": ["transactions"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Transaction by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://127.0.0.1:5000/transactions/1",
+              "host": ["http://127.0.0.1:5000"],
+              "path": ["transactions", "1"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
