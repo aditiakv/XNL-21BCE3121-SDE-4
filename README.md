@@ -38,7 +38,7 @@ This database schema is designed for a high-performance, scalable fintech platfo
    - The database dump is located in the `fintech-platform.sql` directory. Use it to create the database schema.
 5. Run the backend:
     ⁠bash
-   python fintech_backend/run.py
+   python3 -m fintech_backend.run
    
 
 ⁠ ### Frontend
